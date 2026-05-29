@@ -2,21 +2,79 @@
 <html>
 <head>
     <title>Phishing Awareness Simulation</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg,#1e3c72,#2a5298);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin:0;
+        }
+
+        .container{
+            background:white;
+            padding:30px;
+            border-radius:15px;
+            width:350px;
+            text-align:center;
+            box-shadow:0 0 20px rgba(0,0,0,0.3);
+        }
+
+        h2{
+            color:#2a5298;
+        }
+
+        input{
+            width:90%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:8px;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            background:#2a5298;
+            color:white;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#1e3c72;
+        }
+
+        .note{
+            margin-top:15px;
+            font-size:12px;
+            color:gray;
+        }
+    </style>
 </head>
 <body>
-    <h1>Account Verification Required</h1>
 
-    <p>Please verify your account details.</p>
+<div class="container">
+    <h2>Account Verification</h2>
 
-    <input type="text" placeholder="Username"><br><br>
-    <input type="password" placeholder="Password"><br><br>
+    <input type="text" placeholder="Username">
+
+    <input type="password" placeholder="Password">
 
     <button onclick="showMsg()">Login</button>
 
-    <script>
-        function showMsg() {
-            alert("This was a phishing awareness simulation. Never enter credentials on suspicious websites.");
-        }
-    </script>
+    <p class="note">Cyber Security Awareness Simulation</p>
+</div>
+
+<script>
+function showMsg(){
+alert("This was a phishing awareness simulation. Never enter credentials on suspicious websites.");
+}
+</script>
+
 </body>
 </html>
